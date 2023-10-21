@@ -59,4 +59,33 @@
 </ul>
 ]]></content>
   </entry>
+  <entry>
+    <title>javaWebStormProject</title>
+    <url>/2023/10/21/javaWebStormProject/</url>
+    <content><![CDATA[<h5 id="前端跨域问题："><a href="#前端跨域问题：" class="headerlink" title="前端跨域问题："></a>前端跨域问题：</h5><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/10/21/javaWebStormProject/problem1.png"
+                      class=""
+                >
+
+<p>问题出自于前端后端的端口并不一致，(这里是前端9090，后端8080)在后台设置跨域就行</p>
+<p>SpringBoot设置跨域比较简单：在后台新建一个config包，写一个java类如下：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Bean;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.cors.CorsConfiguration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.cors.UrlBasedCorsConfigurationSource;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.filter.CorsFilter;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CorsConfig</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 当前跨域请求最大有效时长。这里默认1天</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">long</span> <span class="variable">MAX_AGE</span> <span class="operator">=</span> <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> CorsFilter <span class="title function_">corsFilter</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">UrlBasedCorsConfigurationSource</span> <span class="variable">source</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">UrlBasedCorsConfigurationSource</span>();</span><br><span class="line">        <span class="type">CorsConfiguration</span> <span class="variable">corsConfiguration</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">CorsConfiguration</span>();</span><br><span class="line">        corsConfiguration.addAllowedOrigin(<span class="string">&quot;*&quot;</span>); <span class="comment">// 1 设置访问源地址</span></span><br><span class="line">        corsConfiguration.addAllowedHeader(<span class="string">&quot;*&quot;</span>); <span class="comment">// 2 设置访问源请求头</span></span><br><span class="line">        corsConfiguration.addAllowedMethod(<span class="string">&quot;*&quot;</span>); <span class="comment">// 3 设置访问源请求方法</span></span><br><span class="line">        corsConfiguration.setMaxAge(MAX_AGE);</span><br><span class="line">        source.registerCorsConfiguration(<span class="string">&quot;/**&quot;</span>, corsConfiguration); <span class="comment">// 4 对接口配置跨域设置</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">CorsFilter</span>(source);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/10/21/javaWebStormProject/solve1.png"
+                      class=""
+                >
+
+
+
+<h5 id="忽略某个字段不展示给前端："><a href="#忽略某个字段不展示给前端：" class="headerlink" title="忽略某个字段不展示给前端："></a>忽略某个字段不展示给前端：</h5><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@JsonIgnore</span><span class="comment">//不展示密码</span></span><br><span class="line"><span class="keyword">private</span> String password;</span><br></pre></td></tr></table></figure></div>
+
+<h5 id="sql中的条件判断："><a href="#sql中的条件判断：" class="headerlink" title="sql中的条件判断："></a>sql中的条件判断：</h5><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> sys_user(username,password,nickname,email,phone,address) </span><br><span class="line"><span class="keyword">VALUES</span>(</span><br><span class="line">	if(x1 <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">null</span>,x1,<span class="string">&#x27;&#x27;</span>),</span><br><span class="line">	if(x2 <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">null</span>,x2,<span class="string">&#x27;&#x27;</span>),</span><br><span class="line">	if(x3 <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">null</span>,x3,<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">--或者可以这么用</span></span><br><span class="line"><span class="keyword">where</span> if(判断式子,为真时执行式子,为假时执行式子)</span><br><span class="line"><span class="keyword">and</span> if(判断式子,为真时执行式子,为假时执行式子)</span><br><span class="line"><span class="comment">--......</span></span><br></pre></td></tr></table></figure></div>
+
+]]></content>
+  </entry>
 </search>
