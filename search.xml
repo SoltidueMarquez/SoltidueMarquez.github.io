@@ -127,4 +127,100 @@
 
 ]]></content>
   </entry>
+  <entry>
+    <title>tetris</title>
+    <url>/2023/11/12/tetris/</url>
+    <content><![CDATA[<h3 id="用Unity实现俄罗斯方块"><a href="#用Unity实现俄罗斯方块" class="headerlink" title="用Unity实现俄罗斯方块"></a>用Unity实现俄罗斯方块</h3><p>教程视频原址：<a class="link"   href="https://www.bilibili.com/video/BV1V341197gn/?spm_id_from=333.880.my_history.page.click&vd_source=4a9105b6623db0bf0a88a08c56388791" >【Unity教程搬运】如何在Unity中制作俄罗斯方块（完整教程）🧩🧱_哔哩哔哩_bilibili <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="第一步-准备工作："><a href="#第一步-准备工作：" class="headerlink" title="第一步-准备工作："></a>第一步-准备工作：</h4><h6 id="1-依然是新建项目和场景："><a href="#1-依然是新建项目和场景：" class="headerlink" title="1.依然是新建项目和场景："></a>1.依然是新建项目和场景：</h6><p>项目我们选择2D，Unity版本这里使用的是2022.3.0</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112113917937.png"
+                      class=""
+                >
+
+<h6 id="2-然后需要导入一些资源包："><a href="#2-然后需要导入一些资源包：" class="headerlink" title="2.然后需要导入一些资源包："></a>2.然后需要导入一些资源包：</h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112114459096.png"
+                      class=""
+                >
+
+<p>这里选择我们准备的资源包：TetrisPackage.unitypackage</p>
+<p>场景里就会出现Sprites(图片资源)、Scripts(脚本组件)、Perfabs(预制体)和Tiles(用于绘制的方块网格)文件夹</p>
+<h6 id="3-在场景的main-camera中更改背景颜色-Background-和相机大小-Size"><a href="#3-在场景的main-camera中更改背景颜色-Background-和相机大小-Size" class="headerlink" title="3.在场景的main camera中更改背景颜色(Background)和相机大小(Size)"></a>3.在场景的main camera中更改背景颜色(Background)和相机大小(Size)</h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112115717204.png"
+                      class=""
+                >
+
+<h6 id="4-搭建俄罗斯方块的背景辅助网格"><a href="#4-搭建俄罗斯方块的背景辅助网格" class="headerlink" title="4.搭建俄罗斯方块的背景辅助网格"></a>4.搭建俄罗斯方块的背景辅助网格</h6><p>将Sprites文件夹下的Grid拖入场景，属性中将Draw Mode设置为Tiled(平铺)，Width和Height分别设成10和20</p>
+<p>随后将Border也拖入场景</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112120119783.png"
+                      class=""
+                >
+
+<h4 id="第二步-瓦片地图设置、方块数据："><a href="#第二步-瓦片地图设置、方块数据：" class="headerlink" title="第二步-瓦片地图设置、方块数据："></a>第二步-瓦片地图设置、方块数据：</h4><h6 id="1-创建一个网格，将Grid命名为Board"><a href="#1-创建一个网格，将Grid命名为Board" class="headerlink" title="1.创建一个网格，将Grid命名为Board"></a>1.创建一个网格，将Grid命名为Board</h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112120423573.png"
+                      class=""
+                >
+
+<h6 id="2-修改图层"><a href="#2-修改图层" class="headerlink" title="2.修改图层"></a>2.修改图层</h6><p>在属性中Order in Layer决定了物体的渲染顺序，也就是遮挡关系，最远的应该是背景和辅助网格那么它就该被设为0，边框Border设置为3，瓷砖Tilemap设置为2</p>
+<h6 id="3-创建幽灵网格"><a href="#3-创建幽灵网格" class="headerlink" title="3.创建幽灵网格"></a>3.创建幽灵网格</h6><p>复制一份Board，将之命名为Ghost，Ghost下的Tilemap图层顺序是1</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112121232823.png"
+                      class=""
+                >
+
+<h6 id="4-创建用于绘制的Tiles"><a href="#4-创建用于绘制的Tiles" class="headerlink" title="4.创建用于绘制的Tiles"></a>4.创建用于绘制的Tiles</h6><p>这里其实我们已经为大家创建好了，步骤如下：</p>
+<p>打开Tile Palette，选择创建新的Tile Palette(Create New Palette)，命名为Blocks放在Assets的Tiles文件夹下，而后将所有的方块资源拖拽进去</p>
+<p>感兴趣的同学可以去看看视频，时间是10:46-12:39</p>
+<h6 id="5-设置游戏中会出现的四联方块"><a href="#5-设置游戏中会出现的四联方块" class="headerlink" title="5.设置游戏中会出现的四联方块"></a>5.设置游戏中会出现的四联方块</h6><p>负责这个的是Tetromino、Data和Board脚本</p>
+<p>大致思想是Tilemap将游戏画面切分成若干网格，通过不断在网格上刷新并重新绘制方块来模拟游戏。</p>
+<p>Data脚本负责存储旋转变换矩阵(线性代数)以及静态存储四联方块的相对位置信息(四个方块的横纵坐标)将之存储在对应的数据字典中，在Tetromino脚本中调用读取。</p>
+<p>将Board脚本组件加在Board物体上，并设置对应属性Tetrominoes的值(每一个四联方块以及对应的颜色)</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112123855284.png"
+                      class=""
+                >
+
+<h4 id="第三步-生成与设置："><a href="#第三步-生成与设置：" class="headerlink" title="第三步-生成与设置："></a>第三步-生成与设置：</h4><p>这就是Board脚本要做的事：</p>
+<p>它首先在Awake(Unity加载场景时首先调用的函数)函数中调用Tetromino脚本定义的数据结构方法初始化Tetrominoes数组，并且获取了对象的子物体Tilemap存储了起来。</p>
+<p>Start函数同样是在加载场景是会调用的函数，它的调用时间晚于Awake，在里面我们调用了SpawnPiece方法生成方块，并设置时间流速为正常的1f。</p>
+<p>SpawnPiece方法随机生成一种方块并对方块进行初始化绘制</p>
+<p>此外越界判定函数以及得分检测以及游戏结束判断都在Board脚本中进行</p>
+<h6 id="1-将Piece脚本组件挂载在游戏物体Board上"><a href="#1-将Piece脚本组件挂载在游戏物体Board上" class="headerlink" title="1.将Piece脚本组件挂载在游戏物体Board上"></a>1.将Piece脚本组件挂载在游戏物体Board上</h6><p>在Piece脚本中，我们构建了玩家输入的响应事件，包括A、D左右移动，Q、E旋转，空格快速下落等等；并且真正绘制了游戏中出现的方块。</p>
+<h6 id="2-设置方块的初始生成点与下落时间、判定落地时间"><a href="#2-设置方块的初始生成点与下落时间、判定落地时间" class="headerlink" title="2.设置方块的初始生成点与下落时间、判定落地时间"></a>2.设置方块的初始生成点与下落时间、判定落地时间</h6><p>直接在外部修改Board和Piece脚本的值就行了，Spawn Position是生成的位置，Step Delay是下落的时间，Lock Delay是判断碰撞的锁定时间，自行调整即可。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112142619935.png"
+                      class=""
+                >
+
+<h4 id="第四步-设置重影："><a href="#第四步-设置重影：" class="headerlink" title="第四步-设置重影："></a>第四步-设置重影：</h4><h6 id="1-将Ghost脚本挂载在Ghost物体上，然后设置属性值"><a href="#1-将Ghost脚本挂载在Ghost物体上，然后设置属性值" class="headerlink" title="1.将Ghost脚本挂载在Ghost物体上，然后设置属性值"></a>1.将Ghost脚本挂载在Ghost物体上，然后设置属性值</h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112145203497.png"
+                      class=""
+                >
+
+<h4 id="第五步-设置UI："><a href="#第五步-设置UI：" class="headerlink" title="第五步-设置UI："></a>第五步-设置UI：</h4><h6 id="1-将perfabs文件夹下的Canvas拖入场景中，设置Board的ScoreText属性即可"><a href="#1-将perfabs文件夹下的Canvas拖入场景中，设置Board的ScoreText属性即可" class="headerlink" title="1.将perfabs文件夹下的Canvas拖入场景中，设置Board的ScoreText属性即可"></a>1.将perfabs文件夹下的Canvas拖入场景中，设置Board的ScoreText属性即可</h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/12/tetris/image-20231112153755851.png"
+                      class="" title="image-20231112153755851"
+                >
+]]></content>
+  </entry>
 </search>
