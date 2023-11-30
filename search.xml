@@ -1,35 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/10/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>SoftwareRequirmentReview</title>
     <url>/2023/11/28/SoftwareRequirmentReview/</url>
-    <content><![CDATA[<h1 id="需求分析复习"><a href="#需求分析复习" class="headerlink" title="需求分析复习"></a>需求分析复习</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h6 id="•需求："><a href="#•需求：" class="headerlink" title="•需求："></a><strong>•需求：</strong></h6><p>①用户为了解决问题或达到某些目标所需要的条件或能力;</p>
-<p>②系统或系统部件为了满足合同、标准、规范或其他正式文档所规定的要求而需要具备的条件或能力;</p>
-<p>本只③对①或②中的一个条件或一种能力的一种文档化表述。</p>
-<p>IEEE的定义中同时包括了用户的观点(第一种条件和能力)和开发者的观点(第二种条件和能力),它强调了“需求”的两个不可分割的方面:需求是以用户为中心的，是与问题相联系的；需求要被清晰、明确地写在文档上。</p>
-<h6 id="•需求工程："><a href="#•需求工程：" class="headerlink" title="•需求工程："></a><strong>•需求工程：</strong></h6><p>简单来说，需求工程是所有需求处理活动的总和，它收集信息、分析问题、整合观点、记录需求并验证其正确性，最终反映软件被应用后与其环境互动形成的期望效应。</p>
-<p>从细节来看，可以定义如下：需求工程是软件工程的一个分支，它关注软件系统所应实现的现实世界目标、软件系统的功能和软件系统应当遵子的约束，同时也关注以上因素和准确的软件行为规格说明之间的联系,关注以上因素与其随时间或跨产品族而演化之后的相关因素之间的联系。</p>
-<h6 id="•需求规格说明"><a href="#•需求规格说明" class="headerlink" title="•需求规格说明:"></a>•<strong>需求规格说明</strong>:</h6><p>  获取的需求需要被编写成文档。业务需求被写人项目前景和范围文档,用户需求被写人用户需求文档(或用例文档)，系统级需求被写人需求规格说明。</p>
-<p>  编写文档的主要目的是在系统涉众之间交流需求信息，因此编写的文档应该具有定的质量。这些质量特性有些来自于文档内所有独立需求的质量之和,有些来自于编写者的写作技巧，最重要的质量要求是简洁、精确、一致和易于理解。</p>
-<p>  需求工程师在这个阶段的主要工作包括：1.定制文档模板	2.编写文档</p>
-<h6 id="•-质量属性"><a href="#•-质量属性" class="headerlink" title="• 质量属性:"></a>• <strong>质量属性</strong>:</h6><p>为了度量一个系统的质量，人们通常会选用系统的某些质量要素进行量化处理，建立质量特征，这些特征成为质量属性。</p>
-<h6 id="•非功能需求"><a href="#•非功能需求" class="headerlink" title="•非功能需求:"></a>•<strong>非功能需求</strong>:</h6><p>除功能需求之外的其他4种类别需求又被统称为非功能需求 。在非功能需求中质量属性对系统成败的影响极大，因此在某些情况下，非功能需求又被用来特指质量属性。</p>
-<p>  性能需求 (performance reguiremend)：系统整体或其组成部分应该拥有的性能特征，如CPU 使用率和内存使用率等。</p>
-<p>  质量属性(quality attribute)：系统完成工作的质量，即系统需要在一个“好的程度”上实现功能需求，如可靠性程度和可维护性程度等。</p>
-<p>  对外接口 (external interface）：系统和环境中其他系统之间需要建立的接口,包括使件接口、软件接口和数据库接口等。</p>
-<p>  约束(constraint）：进行系统构造时需要遵守的约束，如编程语言和使件设施等。</p>
-<h6 id="•功能需求"><a href="#•功能需求" class="headerlink" title="•功能需求:"></a>•<strong>功能需求</strong>:</h6><p>功能需求是软件系统需求中最當见和最重要的需求，同时也是最为复杂的需求。</p>
-<p>  通常一个软件系统的绝大部分需状都是功能需求。虽然在类别划分上功能需求只是5种类别之一，但在比例上功能需求有可能占所有需求的90%以上。进行这样不均衡比例的划分。是因为功能需求的处理方式是一致的。</p>
-<p>  功能需求是一个软件产品得以存在的原因，是软件系统能够解决用户问题和产生价值的基础，也是整个软件开发工作的基础。所有开发者都需要了解功能需求。在复杂的系统中功能需求数量太多，所以需要将它组织为多个独立部分，然后按照分工原则由不同的开发者来处理不同的部分。</p>
-<h6 id="•业务需求："><a href="#•业务需求：" class="headerlink" title="•业务需求："></a>•<strong>业务需求</strong>：</h6><p>①业务置求(business requirement)，针对整个业务的期望</p>
-<h6 id="•用户需求："><a href="#•用户需求：" class="headerlink" title="•用户需求："></a>•<strong>用户需求</strong>：</h6><p>②用户需求(user requirement) ,针对具体任务的期望</p>
-<h6 id="•系统需求"><a href="#•系统需求" class="headerlink" title="•系统需求:"></a>•<strong>系统需求</strong>:</h6><p>③系统级需求( system requirement)，针对用户与系统一次交互的期望</p>
-<h6 id="•项目前景"><a href="#•项目前景" class="headerlink" title="•项目前景:"></a>•<strong>项目前景</strong>:</h6><p>描述了产品的作用以及最终的功能，将所有涉众都统一到一个方向。</p>
+    <content><![CDATA[<h1 id="需求分析复习"><a href="#需求分析复习" class="headerlink" title="需求分析复习"></a>需求分析复习</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h6 id="•需求："><a href="#•需求：" class="headerlink" title="•需求："></a><strong>•需求：</strong></h6><p>​	①用户为了解决问题或达到某些目标所需要的条件或能力;</p>
+<p>​	②系统或系统部件为了满足合同、标准、规范或其他正式文档所规定的要求而需要具备的条件或能力;</p>
+<p>​	本只③对①或②中的一个条件或一种能力的一种文档化表述。</p>
+<p>​	IEEE的定义中同时包括了用户的观点(第一种条件和能力)和开发者的观点(第二种条件和能力),它强调了“需求”的两个不可分割的方面:需求是以用户为中心的，是与问题相联系的；需求要被清晰、明确地写在文档上。</p>
+<h6 id="•需求工程："><a href="#•需求工程：" class="headerlink" title="•需求工程："></a><strong>•需求工程：</strong></h6><p>​	简单来说，需求工程是所有需求处理活动的总和，它收集信息、分析问题、整合观点、记录需求并验证其正确性，最终反映软件被应用后与其环境互动形成的期望效应。</p>
+<p>​	从细节来看，可以定义如下：需求工程是软件工程的一个分支，它关注软件系统所应实现的现实世界目标、软件系统的功能和软件系统应当遵子的约束，同时也关注以上因素和准确的软件行为规格说明之间的联系,关注以上因素与其随时间或跨产品族而演化之后的相关因素之间的联系。</p>
+<h6 id="•需求规格说明"><a href="#•需求规格说明" class="headerlink" title="•需求规格说明:"></a>•<strong>需求规格说明</strong>:</h6><pre><code>  获取的需求需要被编写成文档。业务需求被写人项目前景和范围文档,用户需求被写人用户需求文档(或用例文档)，系统级需求被写人需求规格说明。
+
+  编写文档的主要目的是在系统涉众之间交流需求信息，因此编写的文档应该具有定的质量。这些质量特性有些来自于文档内所有独立需求的质量之和,有些来自于编写者的写作技巧，最重要的质量要求是简洁、精确、一致和易于理解。
+
+ 需求工程师在这个阶段的主要工作包括：1.定制文档模板	2.编写文档
+</code></pre>
+<h6 id="•-质量属性"><a href="#•-质量属性" class="headerlink" title="• 质量属性:"></a>• <strong>质量属性</strong>:</h6><p>​	为了度量一个系统的质量，人们通常会选用系统的某些质量要素进行量化处理，建立质量特征，这些特征成为质量属性。</p>
+<h6 id="•非功能需求"><a href="#•非功能需求" class="headerlink" title="•非功能需求:"></a>•<strong>非功能需求</strong>:</h6><p>​	除功能需求之外的其他4种类别需求又被统称为非功能需求 。在非功能需求中质量属性对系统成败的影响极大，因此在某些情况下，非功能需求又被用来特指质量属性。</p>
+<pre><code>  性能需求 (performance reguiremend)：系统整体或其组成部分应该拥有的性能特征，如CPU 使用率和内存使用率等。
+
+ 质量属性(quality attribute)：系统完成工作的质量，即系统需要在一个“好的程度”上实现功能需求，如可靠性程度和可维护性程度等。
+
+  对外接口 (external interface）：系统和环境中其他系统之间需要建立的接口,包括使件接口、软件接口和数据库接口等。
+
+  约束(constraint）：进行系统构造时需要遵守的约束，如编程语言和使件设施等。
+</code></pre>
+<h6 id="•功能需求"><a href="#•功能需求" class="headerlink" title="•功能需求:"></a>•<strong>功能需求</strong>:</h6><p>​	功能需求是软件系统需求中最當见和最重要的需求，同时也是最为复杂的需求。</p>
+<p>​	通常一个软件系统的绝大部分需状都是功能需求。虽然在类别划分上功能需求只是5种类别之一，但在比例上功能需求有可能占所有需求的90%以上。进行这样不均衡比例的划分。是因为功能需求的处理方式是一致的。</p>
+<p>​	功能需求是一个软件产品得以存在的原因，是软件系统能够解决用户问题和产生价值的基础，也是整个软件开发工作的基础。所有开发者都需要了解功能需求。在复杂的系统中功能需求数量太多，所以需要将它组织为多个独立部分，然后按照分工原则由不同的开发者来处理不同的部分。</p>
+<h6 id="•业务需求："><a href="#•业务需求：" class="headerlink" title="•业务需求："></a>•<strong>业务需求</strong>：</h6><p>​	①业务置求(business requirement)，针对整个业务的期望</p>
+<h6 id="•用户需求："><a href="#•用户需求：" class="headerlink" title="•用户需求："></a>•<strong>用户需求</strong>：</h6><p>​	②用户需求(user requirement) ,针对具体任务的期望</p>
+<h6 id="•系统需求"><a href="#•系统需求" class="headerlink" title="•系统需求:"></a>•<strong>系统需求</strong>:</h6><p>​	③系统级需求( system requirement)，针对用户与系统一次交互的期望</p>
+<h6 id="•项目前景"><a href="#•项目前景" class="headerlink" title="•项目前景:"></a>•<strong>项目前景</strong>:</h6><p>​	描述了产品的作用以及最终的功能，将所有涉众都统一到一个方向。</p>
 <p>•<strong>项目范围</strong>:</p>
-<p>划定了需求的界限。指出了当前的项目是要解决产品长远规划中的哪一部分。</p>
+<p>​	划定了需求的界限。指出了当前的项目是要解决产品长远规划中的哪一部分。</p>
 <h6 id="•-需求获取活动的过程"><a href="#•-需求获取活动的过程" class="headerlink" title="•**&#x3D;&#x3D;需求获取活动的过程&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;需求获取活动的过程&#x3D;&#x3D;**</h6><h6 id="•涉众分析"><a href="#•涉众分析" class="headerlink" title="&#x3D;&#x3D;•涉众分析&#x3D;&#x3D;"></a>&#x3D;&#x3D;•<strong>涉众分析</strong>&#x3D;&#x3D;</h6><p>P145？</p>
-<h6 id="•-涉众分析方法"><a href="#•-涉众分析方法" class="headerlink" title="•**&#x3D;&#x3D;涉众分析方法&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;涉众分析方法&#x3D;&#x3D;**</h6><h6 id="•原型系统"><a href="#•原型系统" class="headerlink" title="•原型系统"></a>•<strong>原型系统</strong></h6><p>  原型是一个系统，它内化(capture)了一个更迟系统(later system)的本质特征。原型系统通常被构造为不完整的系统，以在将来进行改进、补充或者替代。</p>
-<h6 id="•原型系统类型"><a href="#•原型系统类型" class="headerlink" title="•原型系统类型"></a>•<strong>原型系统类型</strong></h6><p>按照使用方式进行分类：</p>
+<h6 id="•-涉众分析方法"><a href="#•-涉众分析方法" class="headerlink" title="•**&#x3D;&#x3D;涉众分析方法&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;涉众分析方法&#x3D;&#x3D;**</h6><h6 id="•原型系统"><a href="#•原型系统" class="headerlink" title="•原型系统"></a>•<strong>原型系统</strong></h6><pre><code> 原型是一个系统，它内化(capture)了一个更迟系统(later system)的本质特征。原型系统通常被构造为不完整的系统，以在将来进行改进、补充或者替代。
+</code></pre>
+<h6 id="•原型系统类型"><a href="#•原型系统类型" class="headerlink" title="•原型系统类型"></a>•<strong>原型系统类型</strong></h6><p>​	按照使用方式进行分类：</p>
 <img  
                      lazyload
                      src="/images/loading.svg"
@@ -52,12 +78,11 @@
                       class=""
                 >
 
-<h6 id="•用例"><a href="#•用例" class="headerlink" title="•用例"></a>•<strong>用例</strong></h6><p>用例是[Jacobson1992]最先在Objectory方法中提出的，用于描述电话通信中的信息交换序列一对话过程。后来人们开始使用用例描述系统与外界交互的行为序列一软件功能的执行场景，并得到越来越多的关注与应用。统一建模语言UML也将用例和用例模型看作是整体中的一个重要组成部分，UML对用例&#x2F;场景的定义成为人们事实上的使用标准。</p>
-<p>UML将用例定义为“在系统(或者子系统或者类)和外部对象的交互中所执行的行为序列的描述，包括各种不同的序列和错误的序列，它们能够联合提供种有价值的服务”[Rumbaugh2004]。 [Cockburn 2001]认为用例描述了在不同条件下系统对某一用户的请求所做出的响应。根据用户请求和请求时的系统条件，系统将执行不同的行为序列，每一个行为序列被称为一个场景。二个用例是多个场景的集合。</p>
-<p>换句话说，每个用例是对相关场景集合(同一个目标下的多个场景)的叙述性的文本描述，这些场景是用户和系统之间的交互行为序列,互有重合、互为补充，共同实现用户的目的。更精确地说，一个用例承载了所有和用户某个目标相关的成功和失败场景的集合。用例是一个理想的容器，以外部视图和描述系统可观察行为的方式记录系统的功能需求。</p>
-<h6 id="•场景："><a href="#•场景：" class="headerlink" title="•场景："></a>•<strong>场景</strong>：</h6><p> [zorman 1995]將场景定义为对系统和环境行为的局部描述。[plihon 19981将场景定义为对行为或者事件序列的描达，序列中的行为和事件是系统蛋要完成的一个任务的特殊示例。</p>
-<p>  [Jarke 1996]认为场景包含行为序列和行为发生的环境，环境描达了行为的主体、 客体和上正文设置。实际上，以上描述都不足以作为场景的准确定义，人们也很难给场景下一个非常准确的定义。可以明确的是，场景具有重点描述真实世界的特征，它利用情景行为者之间的交互、事件随时问的演化等方式来叙述性地描述系统的使用。从宽泛的意义上讲，示例、情景、上下文环境的叙述性描达、原型、序列图、脚本等都是场景常见的表现形式。</p>
-<h6 id="•-用例模型"><a href="#•-用例模型" class="headerlink" title="•**&#x3D;&#x3D;用例模型&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;用例模型&#x3D;&#x3D;**</h6><p>P180 没给概念</p>
+<h6 id="•用例"><a href="#•用例" class="headerlink" title="•用例"></a>•<strong>用例</strong></h6><p>​	用例是[Jacobson1992]最先在Objectory方法中提出的，用于描述电话通信中的信息交换序列一对话过程。后来人们开始使用用例描述系统与外界交互的行为序列一软件功能的执行场景，并得到越来越多的关注与应用。统一建模语言UML也将用例和用例模型看作是整体中的一个重要组成部分，UML对用例&#x2F;场景的定义成为人们事实上的使用标准。</p>
+<p>​	UML将用例定义为“在系统(或者子系统或者类)和外部对象的交互中所执行的行为序列的描述，包括各种不同的序列和错误的序列，它们能够联合提供种有价值的服务”[Rumbaugh2004]。 [Cockburn 2001]认为用例描述了在不同条件下系统对某一用户的请求所做出的响应。根据用户请求和请求时的系统条件，系统将执行不同的行为序列，每一个行为序列被称为一个场景。二个用例是多个场景的集合。</p>
+<p>​	换句话说，每个用例是对相关场景集合的叙述性的文本描述，这些场景是用户和系统之间的交互行为序列,互有重合、互为补充，共同实现用户的目的。更精确地说，一个用例承载了所有和用户某个目标相关的成功和失败场景的集合。用例是一个理想的容器，以外部视图和描述系统可观察行为的方式记录系统的功能需求。</p>
+<h6 id="•场景："><a href="#•场景：" class="headerlink" title="•场景："></a>•<strong>场景</strong>：</h6><p>​	场景是对系统和环境行为的局部描述，或者说场景是对行为或者事件序列的描述，序列中的行为和事件是系统需要完成的一个任务的特殊示例。（也可以说，场景是用户为了达到某个目标而和软件系统发生的行为交互序列，是开 发者描述软件功能和需求的一种重要形式。）</p>
+<h6 id="•用例模型P172"><a href="#•用例模型P172" class="headerlink" title="•用例模型	P172"></a>•<strong>用例模型</strong>	P172</h6><p>​	用例&#x2F;场景模型用于组织用户需求的相关内容，用例&#x2F;场景分析是建立用例&#x2F;场景模型的过程，但用例&#x2F;场景分析无法完成对用户需求相关内容正确性、完备性一致性的验证。</p>
 <h6 id="•需求分析"><a href="#•需求分析" class="headerlink" title="•需求分析"></a>•<strong>需求分析</strong></h6><img  
                      lazyload
                      src="/images/loading.svg"
@@ -65,7 +90,7 @@
                       class=""
                 >
 
-<h6 id="•需求验证-•需求确认"><a href="#•需求验证-•需求确认" class="headerlink" title="•需求验证&amp;•需求确认"></a>•<strong>需求验证</strong>&amp;•<strong>需求确认</strong></h6><p>和验证活动贯穿于软件开发活动一样，验证活动同样也普遍存在于需求开发活动中。</p>
+<h6 id="•需求验证-•需求确认"><a href="#•需求验证-•需求确认" class="headerlink" title="•需求验证&amp;•需求确认"></a>•<strong>需求验证</strong>&amp;•<strong>需求确认</strong></h6><p>​	和验证活动贯穿于软件开发活动一样，验证活动同样也普遍存在于需求开发活动中。</p>
 <img  
                      lazyload
                      src="/images/loading.svg"
@@ -73,35 +98,79 @@
                       class=""
                 >
 
-<p>所述的需求验证专指在需求规格说明完成之后，对需求规格说明文档进行的验证活动。</p>
-<p>需求验证并不是一个可以一次结束的活动 ,它可能需要多次、反复地执行验证。执行验证的方法有:需求评审、原型与模拟、测试用例开发、用户手册编制、利用跟踪关系和自动化分析。</p>
-<h6 id="•需求基准（线）"><a href="#•需求基准（线）" class="headerlink" title="•需求基准（线）"></a>•<strong>需求基准（线）</strong></h6><p>在需求开发活动之后,需求基线应该成为后续软件系统开发的工作基础和黏合剂:</p>
-<p>项目管理者根据需求安排、监控和管理项目计划。</p>
-<p>开发者依据需水开发相应的产品功能和特性。</p>
-<p>测试人员按照需水执行系统测试和验收测试。</p>
-<p>客户和顺客依照需求验收最终产品。</p>
-<p>维护人员参考需水执行产品的演化。</p>
-<h6 id="•需求管理"><a href="#•需求管理" class="headerlink" title="•需求管理"></a>•<strong>需求管理</strong></h6><p>  在需求开发结束之后，还需要有一种力量保证后续的系统开发活动依照需求的基线展开，从而保障系统的质量(质量就是对需求的依从性)。需求管理就是这样的管理活动,它在需求开发之后的产品生命周期当中保证需求作用的有效发挥。</p>
-<h6 id="•需求追踪"><a href="#•需求追踪" class="headerlink" title="•需求追踪"></a>•<strong>需求追踪</strong></h6><p>  需求跟踪是一种有效的控制手段,它能够在涉众的需求变化中协调系统的演化，保持各项开发工作对需求的一致性。</p>
-<p>  需求跟踪是以软件需求规格说明文档为基线，在向前和向后两个方向上，描述需求以及跟踪需求变化的能力。它分为前向跟踪和后向跟踪两种。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/10/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+<p>​	所述的需求验证专指在需求规格说明完成之后，对需求规格说明文档进行的验证活动。</p>
+<p>​	需求验证并不是一个可以一次结束的活动 ,它可能需要多次、反复地执行验证。执行验证的方法有:需求评审、原型与模拟、测试用例开发、用户手册编制、利用跟踪关系和自动化分析。</p>
+<h6 id="•需求基准（线）"><a href="#•需求基准（线）" class="headerlink" title="•需求基准（线）"></a>•<strong>需求基准（线）</strong></h6><p>​	作为需求开发的结果，最终的需求应该被明确和固定下来(如写人软件需求规格说明文涉↑档),传递给其他的项目工作人员。需求基线就是被明确和固定下来的需求集合，是项目团队需要在某一特定产品版本中实现的特征和需求集合。</p>
+<p>​	[IEE1990]定义基线(baseline)为：已经通过正式评审和批准的规格说明或产品，它可以作为进一步开发的基础，并且只有通过正式的变更控制过程才能修改它。</p>
+<h6 id="•需求管理"><a href="#•需求管理" class="headerlink" title="•需求管理"></a>•<strong>需求管理</strong></h6><p>​	在需求开发结束之后，还需要有一种力量保证后续的系统开发活动依照需求的基线展开，从而保障系统的质量(质量就是对需求的依从性)。需求管理就是这样的管理活动,它在需求开发之后的产品生命周期当中保证需求作用的有效发挥。</p>
+<h6 id="•需求追踪"><a href="#•需求追踪" class="headerlink" title="•需求追踪"></a>•<strong>需求追踪</strong></h6><p>​	需求跟踪是一种有效的控制手段,它能够在涉众的需求变化中协调系统的演化，保持各项开发工作对需求的一致性。</p>
+<p>​	需求跟踪是以软件需求规格说明文档为基线，在向前和向后两个方向上，描述需求以及跟踪需求变化的能力。它分为前向跟踪和后向跟踪两种。</p>
+<h2 id="基本过程和思想"><a href="#基本过程和思想" class="headerlink" title="基本过程和思想"></a>基本过程和思想</h2><h6 id="•需求工程过程："><a href="#•需求工程过程：" class="headerlink" title="•需求工程过程："></a>•<strong>需求工程过程</strong>：</h6><p>​	P12 需求工程-&gt;需求管理&#x2F;需求开发-&gt;需求获取&#x2F;需求分析&#x2F;需求规格说明&#x2F;需求验证</p>
+<h6 id="•优秀需求的特性："><a href="#•优秀需求的特性：" class="headerlink" title="•优秀需求的特性："></a>•<strong>优秀需求的特性</strong>：</h6><p>​	完备性、正确性、可行性、必要性、无歧义可验证</p>
+<h6 id="•需求的层次性"><a href="#•需求的层次性" class="headerlink" title="•需求的层次性"></a>•<strong>需求的层次性</strong></h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/28/SoftwareRequirmentReview/image-20231130160925356.png"
+                      class=""
+                >
 
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+<p>​    业务需求反映企业&#x2F;组织对软件系统的高层次目标需求；用户需求,针对具体任务的期望；系统级需求，针对用户与系统一次交互的期望。</p>
+<p>​    业务需求是抽象层次最高的需求，是系统建立的战略出发点，表现为高层次的目标；用户需求来自系统的使用用户，描述系统为用户做什么；系统级需求描述系统的目标与效益，适合决策者。</p>
+<h6 id="•-常见的需求问题及解决方法"><a href="#•-常见的需求问题及解决方法" class="headerlink" title="•**&#x3D;&#x3D;常见的需求问题及解决方法&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;常见的需求问题及解决方法&#x3D;&#x3D;**</h6><h6 id="•需求的类型P35"><a href="#•需求的类型P35" class="headerlink" title="•需求的类型	P35"></a>•<strong>需求的类型</strong>	P35</h6><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/11/28/SoftwareRequirmentReview/image-20231130161205999.png"
+                      class=""
+                >
 
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>​	严格意义上：功能需求、性能需求、质量属性、对外接口、约束</p>
+<p>•<strong>需求获取过程</strong></p>
+<p>​	1.收集背景资料	2.获取问题与目标，定义项目前景与范围	3.涉众识别，选择信息来源	4.选择获取方法，执行获取，获取功能与非功能需求	5.记录获取结果</p>
+<p>​	–<strong>系统边界确定</strong>		P134</p>
+<p>​		1.问题分析与系统边界定义	2.目标分析与系统边界定义	3.业务过程分析与系统边界定义</p>
+<p>​	–<strong>需求获取过程的困难</strong>	P75</p>
+<p>​		1.用户和开发人员的背景不同，立场不同：知识理解的困难、默认知识现象</p>
+<p>​		2.普通用户缺乏概括性、综合性的表述能力</p>
+<p>​		3.用户存在认知困境</p>
+<p>​		4.用户越俎代庖：用户提出的不是需求,而是解决方案、用户固执地坚持某些特征和功能</p>
+<p>​		5.缺乏用户参与：用户太多选择困难、用户认识不足不愿参与、用户情绪抵制消极参与、没有明确的用户</p>
+<p>​	–<strong>硬数据采集、定量硬数据和定性硬数据</strong>	P167</p>
+<p>​		定量数据指经过仔细设计具有严格规范的格式化文档，常见有：1.数据收集表格	2.统计报表</p>
+<p>​		定性硬数据(大多是使用自然语言的文本描述)：1.整个组织的的描述文档	2.业务指导文档	3.业务备忘</p>
+<p>​	–<strong>面谈过程（面谈类型，面谈准备和采样）</strong></p>
+<p>​		1）<strong>金字塔结构</strong>面谈问题的归纳式组织被看做是金字塔形状。使用这种形式时，会见者以很具体的问题（通常是封闭式的问题）开始，然后逐渐提高问题的开放度，同时允许被会见者用越来越笼统的答案来回答问题。在主动的情况下，如果会见者认为被会见者需要对话题进行预热，可以采用金字塔结构，通过逐步的引导使被会见者进入讨论；在被动的情况下，如果会见者发现自己事先对事实的确认存在较大偏差或者被会见者看上去不情愿讨论某个话题，也可以采用金字塔结构。</p>
+<p>​		2）<strong>漏斗结构</strong>在这种结构中，会见者使用演绎的方法，以一般的、开放式的问题开始，然后用封闭式的问题缩小可能的答复。这种面谈结构可看做是漏斗型。在主动的情况下，漏斗结构为开始一场面谈提供了一种容易而轻松的途径。答复者即使答错了开放式问题，也不会感到压力；在被动的情况下，当被会见者对话题有情绪，并且需要自由表达这些情绪的时候，需要采用漏斗型提问顺序。或者在会见者事先对事实了解不多时，也应该采用漏斗结构的问题组织方式。 使用漏斗结构的一个好处是：用这种方式组织面谈能得出很多的详细信息，以至于没有必要使用长序列的封闭式问题。 </p>
+<p>​		3）<strong>菱形结构</strong>人们在面谈中常常会将上述两种结构结合起来使用，其中菱形结构就是一种最好的结合结果。这种结构以一种非常明确的方式开始，然后考察一般问题，最后得出一个非常明确的结论。会见者首先提出一些简单的、封闭式的问题，为面谈过程做好铺垫。在面谈的中间阶段，向被会见者提出明显没有“正确答案”的一般话题的看法。然后，会见者再次限制问题以获得明确的答复，这样就为会见者和被会见者提供了面谈的结束时机。菱形结构结合了其他两种结构的长处，但是也有缺点，即所花的时间比其他任何一个都长。</p>
+<p>​		<strong>准备工作：</strong>1.阅读背景资料	2.确定面谈主题和目标	3.选择被会面者	4.通知被会面者做准备	5.确定问题和类型</p>
+<p>​		<strong>采样：</strong>选择面谈对象的时候采用随机抽样，从各个阶层以及生产、会计、营销、系统、物流各选择2-3名客户参与面谈。高层管理均要参加面谈。因为在选择面谈的时候要力争均衡的用户需求，因此要设计各方面受系统影响的人。采样的规则：控制人数4-8人。高层管理的人最先面谈。然后是系统层。其余层的面谈对象根据实际情况可以先后安排面谈的时间，不一定要分先后顺序。</p>
+<p>​	–<strong>涉众分析及如何与用户建立良好关系</strong>	P147</p>
+<p>​		建立良好的合作关系：</p>
+<p>​	（1）理解用户：对用户的基本特征描述（个人特征、工作特征、少数会涉及地理特征）</p>
+<p>​	（2）评估用户：优先级评估、风险评估、共赢分析</p>
+<p>​	（3）与用户协商，处理用户间对于项目期望冲突</p>
+<p>​	（4）用户的个人特征和工作特征的描述可以帮助更好的确定功能需求。</p>
+<p>​	–<strong>原型（原型类型、原型开发步骤、优缺点及风险）</strong>	P218<br>​		**比较原型开发方法的三种类型:**（1）探索式 探索式原型法是以缺陷需求开始继而不断调整和修正需求的原型开发方式。探索式的原型方法通常要尽可能地调整各种设计选项（例如需求内容、软件化内容以及软件支持方式等），并比较多种设计方案下的用户反馈以得到理想的用户需求。探索式的原型方法能够帮 助开发者更深入地了解用户的业务、问题和期望。<br>（2）实验式 实验式的原型方法初始时拥有清晰的用户需求，但是开发者对这些需求的实现方法、实现效果和可行性没有太大的把握。实验式的原型方法需要首先定义一个对原型的评估方法，确定评估的属性（例如可行性、适用性、效率、吞吐量等），据此评估各种技术方案下的原型，明确需求的可行性和有效的技术实现方案。<br>（3）演化式 在演化式的原型方法中，原型的开发并不是一个独立的活动，而是整个项目的持续开发过程中的一个部分。原型开发的初始点既有要求原型化的需求，也有项目积累下来的原型 资产。积累下的原型资产所没有实现的需求，往往是清晰的需求。在开发原型时，还要能够以一个整体的方式传递给下一个原型开发过程。这个被不断传递和不断增强的原型资产将成为最终的软件系统。通过在持续开发过程中使用原型方法，可以使软件开发过程更好地处理 用户需求的不断变动。</p>
+<p>​		<strong>在需求获取中使用原型方法的主要步骤包括：</strong><br>​    		①确定原型需求。搞清楚为什么要开发原型，拥有的起始点是什么，期望的结束标准是什么?<br>            ②原型开发。依据原型的需求特点和开发目的，选择原型开发方法和构建技术，建立初始原型。<br>​    		③原型评估。对上一阶段产生的原型进行评估，根据评估者的反馈判断原型是否满足 结束标准。评估者一般是用户和开发者。<br>            ④原型修正。如果已经建立的原型达到了目的，就结束原型方法过程。否则根据评估 者反馈的不足进行原型调整，调整完成后准备再次进行原型评估。</p>
+<p>​		<strong>开发步骤(P222)：</strong>1.尽可能考虑各种不同的设计选项，构建多种方案供用户选择，将探索不确定功能需求的原型构建得易于修改；2.让探索可行性的原型收集充分的数据	3.控制开发成本</p>
+<p>​		<strong>优缺点及风险(P232)：</strong>原型方法的最大优点是能够及早解决系统开发中的不确定性，从而减少软件项目失败的风险，但原型方法的复杂性使得它在减少风险的同时也引人了新的风险；原型方法最大的风险是成本失控；原型方法的第二个风险是给客户造成错误印象；	原型方法的第三个风险是用户可能会被原型所表现出来的非功能特性遮蔽了眼睛，从而忽略了他们更应该重视的功能特性；	原型方法的第四个风险是在澄清需求不确定性的同时也可能会掩盖一些用户假设，这些假设将会无从发现。</p>
+<p>​	–<strong>原型的必要性</strong></p>
+<p>​    因为原型是在最终系统产生之前的一个局部真实表现，所以原型方法可以让人们在系统 的开发过程中，就能够对一些具体问题进行基于实物的有效沟通，从而帮助人们尽早解决软 件开发过程中存在的各种不确定性。不确定性是指人们已经拥有的知识是不充分的，不足以 预测将来的事件发展，或者不足以清晰、准确地描述某个事物。<br>实践证明，利用原型有如下好处：<br>①及时、有力地响应用户需求的变化。<br>②减少返工。<br>③帮助控制不完整需求所带来的风险。<br>④可以将一个大的难以处理的开发过程细分成一些更小更容易处理的步骤。<br>⑤减少开发成本，提高经济效益。<br>⑥增加开发者之间的交流，帮助确定技术解决方案的可行性。<br>⑦有效地识别风险和解决风险，帮助进行风险管理。<br>⑧提高用户在软件开发中的参与程度。</p>
+<h6 id="•-需求分析过程"><a href="#•-需求分析过程" class="headerlink" title="•**&#x3D;&#x3D;需求分析过程&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;需求分析过程&#x3D;&#x3D;**</h6><p>–<strong>结构化分析过程</strong></p>
+<p>–<strong>面向对象分析过程</strong></p>
+<h6 id="•-需求规范说明过程"><a href="#•-需求规范说明过程" class="headerlink" title="•**&#x3D;&#x3D;需求规范说明过程&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;需求规范说明过程&#x3D;&#x3D;**</h6><p>–<strong>数据建模过程</strong></p>
+<p>–<strong>过程建模过程</strong></p>
+<p>–<strong>面向对象建模</strong></p>
+<h6 id="•-需求规范说明过程-1"><a href="#•-需求规范说明过程-1" class="headerlink" title="•**&#x3D;&#x3D;需求规范说明过程&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;需求规范说明过程&#x3D;&#x3D;**</h6><p>–<strong>数据建模过程</strong></p>
+<p>–<strong>过程建模过程</strong></p>
+<p>–<strong>面向对象建模</strong></p>
+<h6 id="•-需求验证过程"><a href="#•-需求验证过程" class="headerlink" title="•**&#x3D;&#x3D;需求验证过程&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;需求验证过程&#x3D;&#x3D;**</h6><p>–<strong>需求验证的方法</strong></p>
+<p>–<strong>如何综合使用需求验证方法</strong></p>
+<p>–<strong>需求验证的作用（能发现哪些问题）</strong></p>
+<p>–<strong>需求修正行为</strong></p>
+<h6 id="•-需求管理过程"><a href="#•-需求管理过程" class="headerlink" title="•**&#x3D;&#x3D;需求管理过程&#x3D;&#x3D;**"></a>•**&#x3D;&#x3D;需求管理过程&#x3D;&#x3D;**</h6><p>–<strong>需求规格说明书的作用</strong></p>
+<p>–<strong>需求变更的原因及管理</strong></p>
+<p>–<strong>需求管理的主要作用</strong></p>
+<p>–<strong>需求基线</strong></p>
 ]]></content>
   </entry>
   <entry>
