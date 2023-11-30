@@ -192,6 +192,29 @@
 ]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/10/19/test/</url>
+    <content><![CDATA[<h2 id="Seven-times-I-have-despised-my-soul"><a href="#Seven-times-I-have-despised-my-soul" class="headerlink" title="Seven times I have despised my soul"></a>Seven times I have despised my soul</h2><p>Seven times I have <strong>despised</strong> my <del>soul</del>:</p>
+<ul>
+<li><p>The first time when I saw her being meek that she might attain height.</p>
+</li>
+<li><p>The second time when I saw her limping before the crippled.</p>
+</li>
+<li><p>The third time <u>when she was given to choose between the hard and the easy, and she chose the easy</u>.</p>
+</li>
+<li><p>The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
+</li>
+<li><p>The fifth time when she forebode for weakness, and attributed her patience to strength.</p>
+</li>
+<li><p>The sixth time when she despised the ugliness of a face, and knew not that it was one of her own masks.</p>
+</li>
+<li><p>And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
+<hr>
+<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Hello</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>javaWebStormProject</title>
     <url>/2023/10/21/javaWebStormProject/</url>
     <content><![CDATA[<h5 id="前端跨域问题："><a href="#前端跨域问题：" class="headerlink" title="前端跨域问题："></a>前端跨域问题：</h5><img  
@@ -353,29 +376,6 @@
                      data-src="/2023/11/12/tetris/image-20231112153755851.png"
                       class="" title="image-20231112153755851"
                 >
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/10/19/test/</url>
-    <content><![CDATA[<h2 id="Seven-times-I-have-despised-my-soul"><a href="#Seven-times-I-have-despised-my-soul" class="headerlink" title="Seven times I have despised my soul"></a>Seven times I have despised my soul</h2><p>Seven times I have <strong>despised</strong> my <del>soul</del>:</p>
-<ul>
-<li><p>The first time when I saw her being meek that she might attain height.</p>
-</li>
-<li><p>The second time when I saw her limping before the crippled.</p>
-</li>
-<li><p>The third time <u>when she was given to choose between the hard and the easy, and she chose the easy</u>.</p>
-</li>
-<li><p>The fourth time when she committed a wrong, and comforted herself that others also commit wrong.</p>
-</li>
-<li><p>The fifth time when she forebode for weakness, and attributed her patience to strength.</p>
-</li>
-<li><p>The sixth time when she despised the ugliness of a face, and knew not that it was one of her own masks.</p>
-</li>
-<li><p>And the seventh time when she sang a song of praise, and deemed it a virtue.</p>
-<hr>
-<div class="highlight-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Hello</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ul>
 ]]></content>
   </entry>
 </search>
